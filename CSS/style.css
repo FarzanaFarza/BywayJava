@@ -105,25 +105,25 @@ header .wrapper .header-container .left ul li .cart {
 header .wrapper .header-container .left ul li .cart a {
 
 }
-header .wrapper .header-container .left ul li .one {
+header .wrapper .header-container .left ul li #loginBtn {
     background-color:  #fff;
     color: #000;
     border: 2px solid #334155;
     padding: 10px;
+    cursor: pointer;
 }
-header .wrapper .header-container .left ul li .one a {
-    color: #334155;
-    font-size: 17px;
+header .wrapper .header-container .left ul li #loginBtn .one {
+    background-color: #fff;
 }
-header .wrapper .header-container .left ul li #signupBtn {
+header .wrapper .header-container .left ul li .button {
+
+}
+header .wrapper .header-container .left ul li .button #signupBtn {
     background-color:  #334155;
     color: #fff;
     border: #334155;
     padding: 10px;
-}
-header .wrapper .header-container .left ul li  #signupBtn a {
-    color: #fff;
-    font-size: 17px;
+    cursor: pointer;
 }
 header .wrapper .header-container .left ul li .profile {
     width: 40px;
@@ -539,21 +539,23 @@ header .wrapper .header-container .left ul li .profile a {
 #create .wrapper .top .right h1 {
     font-size: 25px;
 } 
-#create .wrapper .top .right button {
+#create .wrapper .top .right .button {
     background-color: #000;
     color: #fff;
     border: 0px solid #000;
-    padding: 5px 30px;
+    padding: 5px 21px;
+    width: 55%;
     border-radius: 11px;
     margin-top: 2rem;
     display: flex;
     gap: 1rem;
     align-items: center;
-    justify-content: space-between;
 }
-#create .wrapper .top .right button a {
+#create .wrapper .top .right .button p {
     text-decoration: none;
     color: #fff;
+}
+#create .wrapper .top .right .button i {
 
 }
 #create .wrapper .bottom {
@@ -571,18 +573,19 @@ header .wrapper .header-container .left ul li .profile a {
     font-size: 25px;
 }
 
-#create .wrapper .bottom .left button {
+#create .wrapper .bottom .left .button {
     background-color: #000;
     color: #fff;
     border: 0px solid #000;
-    padding: 18px 60px;
+    padding: 10px 37px;
+    width: 59%;
     border-radius: 11px;
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-#create .wrapper .bottom .left button a {
+#create .wrapper .bottom .left .button p {
     text-decoration: none;
     color: #fff;
 }
@@ -729,20 +732,20 @@ header .wrapper .header-container .left ul li .profile a {
 #profile-spotlight .wrapper .spotlight-right ul li .cross-img h4 {
     color: #16A34A;
 }
-#profile-spotlight .wrapper .spotlight-right ul li .cart {
+#profile-spotlight .wrapper .spotlight-right ul li .button {
     background-color:  #000;
     color: #fff;
     border: #334155;
-    padding: 1rem 7rem;
+    padding: 1rem 6rem;
     border-radius: 9px;
 }
 #profile-spotlight .wrapper .spotlight-right ul li .cart a {
     color: #fff;
 }
-#profile-spotlight .wrapper .spotlight-right ul li button {
+#profile-spotlight .wrapper .spotlight-right ul li .button-two {
     background-color: #fff;
     border: 1px solid;
-    padding: 1rem 7rem;
+    padding: 1rem 6rem;
     border-radius: 9px;
 }
 #profile-spotlight .wrapper .spotlight-right ul li button a {
@@ -1205,6 +1208,10 @@ footer .wrapper .footer-container .footer ul li span a .microsoft {
     footer .wrapper .footer-container .left {
         margin-right: 5rem;
     }
+    #create .wrapper .bottom .left .button {
+        padding: 10px 37px;
+        width: 66%;
+    }
 }
 
 @media screen and (max-width: 1080px) {
@@ -1226,8 +1233,18 @@ footer .wrapper .footer-container .footer ul li span a .microsoft {
     #spotlight .wrapper .spotlight-container .left h1 {
         font-size: 32px;
     }
+    #create .wrapper .bottom .left .button {
+        padding: 10px 37px;
+        width: 75%;
+    }
     #content .wrapper .content-container ul li p {
         font-size: 12px;
+    }
+    #profile-spotlight .wrapper .spotlight-right ul li .button {
+        padding: 1rem 5rem;
+    }
+    #profile-spotlight .wrapper .spotlight-right ul li .button-two {
+        padding: 1rem 5rem;
     }
     #review .wrapper .review-container {
         gap: 4rem;
@@ -1242,6 +1259,10 @@ footer .wrapper .footer-container .footer ul li span a .microsoft {
         font-size: 38px;
         font-weight: bold;
     }
+    #create .wrapper .top .right .button {
+        padding: 8px 20px;
+        width: 65%;
+    }    
 }
 @media screen and (max-width: 980px) {
     #profile-spotlight .wrapper .spot-container {
@@ -1253,6 +1274,16 @@ footer .wrapper .footer-container .footer ul li span a .microsoft {
     }
     #profile-spotlight .wrapper .spot-container .spotlight-left {
         padding-bottom: 2rem;
+    }
+    #profile-spotlight .wrapper .spotlight-right ul li .button {
+        padding: 1rem 6rem;
+    }
+    #profile-spotlight .wrapper .spotlight-right ul li .button-two {
+        padding: 1rem 6rem;
+    }
+    #create .wrapper .bottom .left .button {
+        padding: 10px 37px;
+        width: 99%;
     }
     #spotlight .wrapper .spotlight-container .left {
         padding-top: 3rem;
@@ -1357,6 +1388,10 @@ footer .wrapper .footer-container .footer ul li span a .microsoft {
     #session .bottom ul li {
         width: 45%;
     }
+    #create .wrapper .top .right .button {
+        padding: 8px 20px;
+        width: 89%;
+    }   
 } 
 
 @media screen and (max-width: 768px) {
@@ -1365,6 +1400,14 @@ footer .wrapper .footer-container .footer ul li span a .microsoft {
     }
     #spotlight .wrapper .right span {
         display: none;
+    }
+    #create .wrapper .bottom .left .button {
+        padding: 10px 29px;
+        width: 107%;
+    }
+    #create .wrapper .top .right .button {
+        padding: 8px 20px;
+        width: 102%;
     }
     #content .wrapper .content-container ul li h1 {
         font-size: 18px;
@@ -1397,9 +1440,9 @@ footer .wrapper .footer-container .footer ul li span a .microsoft {
         flex-wrap: wrap;
         gap: 10px;
     }
-    #create .wrapper .top .right button {
+    /*#create .wrapper .top .right .button {
         padding: 11px 34px;
-    }
+    }*/
     #create .wrapper .bottom {
         padding: 2rem;
     }
@@ -1424,6 +1467,16 @@ footer .wrapper .footer-container .footer ul li span a .microsoft {
     }
     #content .wrapper .content-container ul {
         flex-direction: column;
+    }
+    #profile-spotlight .wrapper .spotlight-right ul li .button {
+        padding: 1rem 5rem;
+    }
+    #profile-spotlight .wrapper .spotlight-right ul li .button-two {
+        padding: 1rem 5rem;
+    }
+    #create .wrapper .bottom .left .button {
+        padding: 10px 29px;
+        width: 64%;
     }
     #create .wrapper .bottom .left {
         line-height: 2rem;
@@ -1485,15 +1538,15 @@ footer .wrapper .footer-container .footer ul li span a .microsoft {
         font-size: 22px;
         font-weight: bold;
     }
-    #create .wrapper .top .right button {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    #create .wrapper .top .right .button {
+        padding: 8px 20px;
+        width: 71%;
     }
     #create .wrapper .top .right {
         line-height: 2rem;
         margin-left: 2rem;
     }
+
 }
 
 @media screen and (max-width: 540px) {
@@ -1516,6 +1569,10 @@ footer .wrapper .footer-container .footer ul li span a .microsoft {
     #department .wrapper .bottom ul li {
         width: 60%;
         margin-left: 5rem;
+    }
+    #create .wrapper .bottom .left .button {
+        padding: 10px 29px;
+        width: 73%;
     }
     #profile-spotlight .wrapper .spot-container .spotlight-left .design .language .globe {
         width: 4%;
@@ -1545,10 +1602,9 @@ footer .wrapper .footer-container .footer ul li span a .microsoft {
     #session .bottom ul li {
         width: 102%;
     }
-    #create .wrapper .top .right button {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    #create .wrapper .top .right .button {
+        padding: 8px 20px;
+        width: 81%;
     }
     #create .wrapper .bottom .left button {
         padding: 14px 40px;
@@ -1561,10 +1617,9 @@ footer .wrapper .footer-container .footer ul li span a .microsoft {
         width: 91%;
         margin-left: 1rem;
     }
-    #create .wrapper .top .right button {
-        padding: 10px 13px;
-        display: flex;
-        align-items: center;
+    #create .wrapper .top .right .button {
+        padding: 9px 6px;
+        width: 98%;
     }
     #create .wrapper .top .right {
         line-height: 26px;
@@ -1572,6 +1627,10 @@ footer .wrapper .footer-container .footer ul li span a .microsoft {
     #create .wrapper .bottom .left h1 {
         font-size: 15px;
         font-weight: bold;
+    }
+    #create .wrapper .bottom .left .button {
+        padding: 10px 29px;
+        width: 107%;
     }
     #create .wrapper .bottom .left {
         width: 102%;
