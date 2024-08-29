@@ -577,7 +577,7 @@ header .wrapper .header-container .left ul li .profile a {
     background-color: #000;
     color: #fff;
     border: 0px solid #000;
-    padding: 10px 37px;
+    padding: 7px 73px;
     width: 59%;
     border-radius: 11px;
     margin-top: 10px;
@@ -1178,6 +1178,12 @@ footer .wrapper .footer-container .footer ul li span a .microsoft {
 
 /* Responsive */
 
+@media screen and (max-width: 1440px) {
+    #create .wrapper .bottom .left .button {
+        padding: 7px 47px;
+    }
+}
+
 @media screen and (max-width: 1280px) {
     #department .wrapper .bottom ul li a span h6 {
         color: #334155;
@@ -1211,6 +1217,9 @@ footer .wrapper .footer-container .footer ul li span a .microsoft {
     #create .wrapper .bottom .left .button {
         padding: 10px 37px;
         width: 66%;
+    }
+    #create .wrapper .top .right .button {
+        padding: 6px 11px;
     }
 }
 
@@ -1260,7 +1269,7 @@ footer .wrapper .footer-container .footer ul li span a .microsoft {
         font-weight: bold;
     }
     #create .wrapper .top .right .button {
-        padding: 8px 20px;
+        padding: 8px 30px;
         width: 65%;
     }    
 }
@@ -1620,6 +1629,10 @@ footer .wrapper .footer-container .footer ul li span a .microsoft {
     #create .wrapper .top .right .button {
         padding: 9px 6px;
         width: 98%;
+    }
+    #department .wrapper .bottom ul li {
+        width: 78%;
+        margin-left: 2rem;
     }
     #create .wrapper .top .right {
         line-height: 26px;
